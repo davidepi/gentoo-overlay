@@ -6,7 +6,7 @@ EAPI="8"
 
 DISTUTILS_USE_PEP517=setuptools
 PYPI_NO_NORMALIZE=1
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit distutils-r1 pypi
 
@@ -20,13 +20,13 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/requests[${PYTHON_USEDEP}]
-         dev-python/jsonpickle[${PYTHON_USEDEP}]"
+		dev-python/jsonpickle[${PYTHON_USEDEP}]"
 DEPEND="${REDEPEND}
-        test? (
-                dev-python/pytest[${PYTHON_USEDEP}]
-              )"
+	test? (
+		dev-python/pytest[${PYTHON_USEDEP}]
+	)"
 
 python_test() {
-    nosetests --verbose || die
-    py.test -v -v || die
+	nosetests --verbose || die
+	py.test -v -v || die
 }

@@ -5,4 +5,7 @@
     <email>me@davidepi.dev</email>
     <name>Davide Pizzolotto</name>
   </maintainer>
+  <upstream>
+    <remote-id type="github">certbot/certbot</remote-id>
+  </upstream>
 </pkgmetadata>

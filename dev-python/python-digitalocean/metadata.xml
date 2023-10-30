@@ -5,4 +5,8 @@
     <email>me@davidepi.dev</email>
     <name>Davide Pizzolotto</name>
   </maintainer>
+  <upstream>
+    <remote-id type="github">koalalorenzo/python-digitalocean</remote-id>
+    <remote-id type="pypi">python-digitalocean</remote-id>
+  </upstream>
 </pkgmetadata>
